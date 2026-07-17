@@ -1,0 +1,73 @@
+# =====================================
+# CUDA Build Artifacts
+# =====================================
+
+*.o
+*.obj
+*.exe
+*.out
+*.a
+*.lib
+*.dll
+*.so
+*.dylib
+
+# CUDA Generated Files
+*.ptx
+*.cubin
+*.fatbin
+*.nvvp
+
+# =====================================
+# Build Directories
+# =====================================
+
+build/
+bin/
+cmake-build-*/
+CMakeFiles/
+CMakeCache.txt
+cmake_install.cmake
+compile_commands.json
+Makefile
+
+# =====================================
+# Visual Studio Code
+# =====================================
+
+.vscode/
+!.vscode/extensions.json
+
+# =====================================
+# Visual Studio
+# =====================================
+
+.vs/
+*.vcxproj.user
+
+# =====================================
+# CLion / JetBrains
+# =====================================
+
+.idea/
+
+# =====================================
+# Operating System Files
+# =====================================
+
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# =====================================
+# Logs
+# =====================================
+
+*.log
+
+# =====================================
+# Temporary Files
+# =====================================
+
+*.tmp
+*.temp

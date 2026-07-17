@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1500" height="260" viewBox="0 0 1500 260">
+<style>
+.title{font:700 30px Arial;fill:#E6EDF3}
+.h{font:700 22px Arial;fill:#E6EDF3}
+.t{font:16px Arial;fill:#C9D1D9}
+.card{fill:#161B22;stroke:#30363D;stroke-width:2;rx:18}
+.green{fill:#76B900}
+.blue{fill:#58A6FF}
+.line{stroke:#76B900;stroke-width:4;marker-end:url(#a)}
+</style>
+<defs><marker id="a" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><polygon points="0,0 8,4 0,8" fill="#76B900"/></marker></defs>
+<rect width="100%" height="100%" fill="#0D1117"/>
+<text x="750" y="40" text-anchor="middle" class="title">Vector Addition Workflow</text><rect class="card" x="20" y="100" width="150" height="70"/><text x="95" y="142" text-anchor="middle" class="t">Generate Input</text><line class="line" x1="170" y1="135" x2="205" y2="135"/><rect class="card" x="205" y="100" width="150" height="70"/><text x="280" y="142" text-anchor="middle" class="t">Host Alloc</text><line class="line" x1="355" y1="135" x2="390" y2="135"/><rect class="card" x="390" y="100" width="150" height="70"/><text x="465" y="142" text-anchor="middle" class="t">Device Alloc</text><line class="line" x1="540" y1="135" x2="575" y2="135"/><rect class="card" x="575" y="100" width="150" height="70"/><text x="650" y="142" text-anchor="middle" class="t">Copy H→D</text><line class="line" x1="725" y1="135" x2="760" y2="135"/><rect class="card" x="760" y="100" width="150" height="70"/><text x="835" y="142" text-anchor="middle" class="t">Kernel</text><line class="line" x1="910" y1="135" x2="945" y2="135"/><rect class="card" x="945" y="100" width="150" height="70"/><text x="1020" y="142" text-anchor="middle" class="t">Copy D→H</text><line class="line" x1="1095" y1="135" x2="1130" y2="135"/><rect class="card" x="1130" y="100" width="150" height="70"/><text x="1205" y="142" text-anchor="middle" class="t">Verify</text><line class="line" x1="1280" y1="135" x2="1315" y2="135"/><rect class="card" x="1315" y="100" width="150" height="70"/><text x="1390" y="142" text-anchor="middle" class="t">Benchmark</text></svg>
