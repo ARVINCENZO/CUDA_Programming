@@ -161,10 +161,9 @@ CUDA-Programming/
 
 | Chapter | Description |
 |----------|-------------|
-| [Vector_Addition](Vector_Addition/README.md) | Learn the fundamentals of CUDA kernels, thread indexing, and memory transfer. |
+| [Vector_Addition](Vector_Addition/readme.md) | Learn the fundamentals of CUDA kernels, thread indexing, and memory transfer. |
 
 ---
-
 # Learning Approach
 
 This repository follows a simple principle:
@@ -215,10 +214,8 @@ Each chapter introduces new concepts gradually.
 ## 1. Clone the Repository
 
 ```bash
-git clone https://github.com/<your-username>/CUDA_Programming.git
+git clone https://github.com/ARVINCENZO/CUDA_Programming.git
 ```
-
-Replace `<your-username>` with your GitHub username.
 
 ---
 
