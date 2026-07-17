@@ -215,7 +215,7 @@ Each chapter introduces new concepts gradually.
 ## 1. Clone the Repository
 
 ```bash
-git clone https://github.com/<your-username>/cuda_programming.git
+git clone https://github.com/<your-username>/CUDA_Programming.git
 ```
 
 Replace `<your-username>` with your GitHub username.
@@ -225,7 +225,7 @@ Replace `<your-username>` with your GitHub username.
 ## 2. Navigate to the Repository
 
 ```bash
-cd cuda_programming
+cd CUDA_Programming
 ```
 
 ---
@@ -235,7 +235,7 @@ cd cuda_programming
 Example:
 
 ```bash
-cd Vector-Addition
+cd Vector_Addition
 
 nvcc vector_addition.cu -o vector_addition
 ```
