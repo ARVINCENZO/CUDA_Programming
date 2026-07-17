@@ -161,7 +161,7 @@ CUDA-Programming/
 
 | Chapter | Description |
 |----------|-------------|
-| [01 – Vector Addition](01-Vector-Addition/README.md) | Learn the fundamentals of CUDA kernels, thread indexing, and memory transfer. |
+| [Vector_Addition](Vector_Addition/README.md) | Learn the fundamentals of CUDA kernels, thread indexing, and memory transfer. |
 
 ---
 
