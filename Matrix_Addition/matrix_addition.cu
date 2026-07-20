@@ -73,15 +73,16 @@ int main(){
   std::cout << std::endl;
 
   //verify the results
-  for(int i = 0; i < N * N; ++i)
-  {
-    if(h_c[i] != 3)
-    {
-        std::cout << "Verification Failed!" << std::endl;
-        return 0;
-    }
-  }
+  bool correct = true;
 
+  for(int i = 0; i < N * N; i++)
+  {
+      if(h_c[i] != 3)
+      {
+          correct = false;
+          break;
+      }
+  }
 
   //free the device variables
   cudaFree(d_a);
