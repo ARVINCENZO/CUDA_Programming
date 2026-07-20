@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900">
+<defs>
+<style>
+.t{font:700 36px Arial;fill:#F0F6FC}
+.s{font:20px Arial;fill:#8B949E}
+.h{font:700 24px Arial;fill:#F0F6FC}
+.b{font:600 18px Arial;fill:#F0F6FC}
+.sm{font:500 15px Arial;fill:#8B949E}
+</style>
+<marker id="ar" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto">
+<path d="M0,0 L8,3 L0,6 Z" fill="#58A6FF"/>
+</marker>
+</defs>
+
+<rect width="1600" height="900" fill="#0D1117"/>
+
+<text x="60" y="60" class="t">CUDA Programming • Chapter 2</text>
+<text x="60" y="95" class="s">Figure 7 — Host to Device Memory Transfer</text>
+
+<!-- Host -->
+<rect x="80" y="180" width="430" height="500" rx="18" fill="#161B22" stroke="#76B900" stroke-width="3"/>
+<text x="235" y="225" class="h">Host (CPU)</text>
+
+<rect x="145" y="290" width="300" height="260" rx="12" fill="#0D1117" stroke="#58A6FF" stroke-width="2"/>
+<text x="240" y="330" class="h">System RAM</text>
+
+<rect x="180" y="380" width="55" height="55" rx="6" fill="#161B22" stroke="#76B900"/>
+<rect x="245" y="380" width="55" height="55" rx="6" fill="#161B22" stroke="#76B900"/>
+<rect x="310" y="380" width="55" height="55" rx="6" fill="#161B22" stroke="#76B900"/>
+
+<text x="205" y="470" class="b">Matrix A</text>
+<text x="270" y="470" class="b">Matrix B</text>
+<text x="335" y="470" class="b">Matrix C</text>
+
+<!-- PCIe -->
+<line x1="510" y1="430" x2="1080" y2="430" stroke="#58A6FF" stroke-width="8" marker-end="url(#ar)"/>
+<line x1="1080" y1="470" x2="510" y2="470" stroke="#76B900" stroke-width="8" marker-end="url(#ar)"/>
+
+<text x="790" y="395" text-anchor="middle" class="h">cudaMemcpy (Host → Device)</text>
+<text x="790" y="510" text-anchor="middle" class="h">cudaMemcpy (Device → Host)</text>
+<text x="790" y="445" text-anchor="middle" class="sm">PCIe / NVLink Communication</text>
+
+<!-- GPU -->
+<rect x="1090" y="180" width="430" height="500" rx="18" fill="#161B22" stroke="#58A6FF" stroke-width="3"/>
+<text x="1250" y="225" class="h">GPU Device</text>
+
+<rect x="1155" y="290" width="300" height="260" rx="12" fill="#0D1117" stroke="#76B900" stroke-width="2"/>
+<text x="1235" y="330" class="h">Global Memory</text>
+
+<rect x="1190" y="380" width="55" height="55" rx="6" fill="#161B22" stroke="#58A6FF"/>
+<rect x="1255" y="380" width="55" height="55" rx="6" fill="#161B22" stroke="#58A6FF"/>
+<rect x="1320" y="380" width="55" height="55" rx="6" fill="#161B22" stroke="#58A6FF"/>
+
+<text x="1215" y="470" class="b">A</text>
+<text x="1280" y="470" class="b">B</text>
+<text x="1345" y="470" class="b">C</text>
+
+<rect x="260" y="730" width="1080" height="70" rx="12" fill="#161B22" stroke="#30363D"/>
+<text x="800" y="773" text-anchor="middle" class="b">
+Input matrices are copied to GPU memory before kernel execution, and the result is copied back after computation.
+</text>
+
+<line x1="60" y1="835" x2="1540" y2="835" stroke="#30363D"/>
+<text x="800" y="870" text-anchor="middle" class="sm">
+CPU memory and GPU memory are separate address spaces connected through explicit memory transfers.
+</text>
+
+</svg>

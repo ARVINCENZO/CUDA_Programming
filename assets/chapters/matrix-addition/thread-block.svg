@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900">
+<defs>
+<style>
+.title{font:700 36px Arial;fill:#F0F6FC}
+.sub{font:20px Arial;fill:#8B949E}
+.head{font:700 24px Arial;fill:#F0F6FC}
+.txt{font:600 18px Arial;fill:#F0F6FC}
+.small{font:500 15px Arial;fill:#8B949E}
+</style>
+<marker id="arr" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto">
+<path d="M0,0 L8,3 L0,6 Z" fill="#58A6FF"/>
+</marker>
+</defs>
+
+<rect width="1600" height="900" fill="#0D1117"/>
+<text x="60" y="60" class="title">CUDA Programming • Chapter 2</text>
+<text x="60" y="95" class="sub">Figure 4 — Understanding a CUDA Thread Block</text>
+
+<rect x="70" y="140" width="760" height="660" rx="18" fill="#161B22" stroke="#76B900" stroke-width="3"/>
+<text x="315" y="185" class="head">One CUDA Block</text>
+<rect x="140" y="240" width="48" height="48" rx="6" fill="#0D1117" stroke="#58A6FF" stroke-width="2"/><rect x="200" y="240" width="48" height="48" rx="6" fill="#0D1117" stroke="#58A6FF" stroke-width="2"/><rect x="260" y="240" width="48" height="48" rx="6" fill="#0D1117" stroke="#58A6FF" stroke-width="2"/><rect x="320" y="240" width="48" height="48" rx="6" fill="#0D1117" stroke="#58A6FF" stroke-width="2"/><rect x="380" y="240" width="48" height="48" rx="6" fill="#0D1117" stroke="#58A6FF" stroke-width="2"/><rect x="440" y="240" width="48" height="48" rx="6" fill="#0D1117" stroke="#58A6FF" stroke-width="2"/><rect x="500" y="240" width="48" height="48" rx="6" fill="#0D1117" stroke="#58A6FF" stroke-width="2"/><rect x="560" y="240" width="48" height="48" rx="6" fill="#0D1117" stroke="#58A6FF" stroke-width="2"/><rect x="140" y="300" width="48" height="48" rx="6" fill="#0D1117" stroke="#58A6FF" stroke-width="2"/><rect x="200" y="300" width="48" height="48" rx="6" fill="#0D1117" stroke="#58A6FF" stroke-width="2"/><rect x="260" y="300" width="48" height="48" rx="6" fill="#0D1117" stroke="#58A6FF" stroke-width="2"/><rect x="320" y="300" width="48" height="48" rx="6" fill="#0D1117" stroke="#58A6FF" stroke-width="2"/><rect x="380" y="300" width="48" height="48" rx="6" fill="#0D1117" stroke="#58A6FF" stroke-width="2"/><rect x="440" y="300" width="48" height="48" rx="6" fill="#0D1117" stroke="#58A6FF" stroke-width="2"/><rect x="500" y="300" width="48" height="48" rx="6" fill="#0D1117" stroke="#58A6FF" stroke-width="2"/><rect x="560" y="300" width="48" height="48" rx="6" fill="#0D1117" stroke="#58A6FF" stroke-width="2"/><rect x="140" y="360" width="48" height="48" rx="6" fill="#0D1117" stroke="#58A6FF" stroke-width="2"/><rect x="200" y="360" width="48" height="48" rx="6" fill="#0D1117" stroke="#58A6FF" stroke-width="2"/><rect x="260" y="360" width="48" height="48" rx="6" fill="#0D1117" stroke="#58A6FF" stroke-width="2"/><rect x="320" y="360" width="48" height="48" rx="6" fill="#0D1117" stroke="#58A6FF" stroke-width="2"/><rect x="380" y="360" width="48" height="48" rx="6" fill="#0D1117" stroke="#58A6FF" stroke-width="2"/><rect x="440" y="360" width="48" height="48" rx="6" fill="#0D1117" stroke="#58A6FF" stroke-width="2"/><rect x="500" y="360" width="48" height="48" rx="6" fill="#0D1117" stroke="#58A6FF" stroke-width="2"/><rect x="560" y="360" width="48" height="48" rx="6" fill="#0D1117" stroke="#58A6FF" stroke-width="2"/><rect x="140" y="420" width="48" height="48" rx="6" fill="#0D1117" stroke="#58A6FF" stroke-width="2"/><rect x="200" y="420" width="48" height="48" rx="6" fill="#0D1117" stroke="#58A6FF" stroke-width="2"/><rect x="260" y="420" width="48" height="48" rx="6" fill="#0D1117" stroke="#58A6FF" stroke-width="2"/><rect x="320" y="420" width="48" height="48" rx="6" fill="#0D1117" stroke="#58A6FF" stroke-width="2"/><rect x="380" y="420" width="48" height="48" rx="6" fill="#0D1117" stroke="#58A6FF" stroke-width="2"/><rect x="440" y="420" width="48" height="48" rx="6" fill="#76B900" stroke="#76B900" stroke-width="2"/><rect x="500" y="420" width="48" height="48" rx="6" fill="#0D1117" stroke="#58A6FF" stroke-width="2"/><rect x="560" y="420" width="48" height="48" rx="6" fill="#0D1117" stroke="#58A6FF" stroke-width="2"/><rect x="140" y="480" width="48" height="48" rx="6" fill="#0D1117" stroke="#58A6FF" stroke-width="2"/><rect x="200" y="480" width="48" height="48" rx="6" fill="#0D1117" stroke="#58A6FF" stroke-width="2"/><rect x="260" y="480" width="48" height="48" rx="6" fill="#0D1117" stroke="#58A6FF" stroke-width="2"/><rect x="320" y="480" width="48" height="48" rx="6" fill="#0D1117" stroke="#58A6FF" stroke-width="2"/><rect x="380" y="480" width="48" height="48" rx="6" fill="#0D1117" stroke="#58A6FF" stroke-width="2"/><rect x="440" y="480" width="48" height="48" rx="6" fill="#0D1117" stroke="#58A6FF" stroke-width="2"/><rect x="500" y="480" width="48" height="48" rx="6" fill="#0D1117" stroke="#58A6FF" stroke-width="2"/><rect x="560" y="480" width="48" height="48" rx="6" fill="#0D1117" stroke="#58A6FF" stroke-width="2"/><rect x="140" y="540" width="48" height="48" rx="6" fill="#0D1117" stroke="#58A6FF" stroke-width="2"/><rect x="200" y="540" width="48" height="48" rx="6" fill="#0D1117" stroke="#58A6FF" stroke-width="2"/><rect x="260" y="540" width="48" height="48" rx="6" fill="#0D1117" stroke="#58A6FF" stroke-width="2"/><rect x="320" y="540" width="48" height="48" rx="6" fill="#0D1117" stroke="#58A6FF" stroke-width="2"/><rect x="380" y="540" width="48" height="48" rx="6" fill="#0D1117" stroke="#58A6FF" stroke-width="2"/><rect x="440" y="540" width="48" height="48" rx="6" fill="#0D1117" stroke="#58A6FF" stroke-width="2"/><rect x="500" y="540" width="48" height="48" rx="6" fill="#0D1117" stroke="#58A6FF" stroke-width="2"/><rect x="560" y="540" width="48" height="48" rx="6" fill="#0D1117" stroke="#58A6FF" stroke-width="2"/><rect x="140" y="600" width="48" height="48" rx="6" fill="#0D1117" stroke="#58A6FF" stroke-width="2"/><rect x="200" y="600" width="48" height="48" rx="6" fill="#0D1117" stroke="#58A6FF" stroke-width="2"/><rect x="260" y="600" width="48" height="48" rx="6" fill="#0D1117" stroke="#58A6FF" stroke-width="2"/><rect x="320" y="600" width="48" height="48" rx="6" fill="#0D1117" stroke="#58A6FF" stroke-width="2"/><rect x="380" y="600" width="48" height="48" rx="6" fill="#0D1117" stroke="#58A6FF" stroke-width="2"/><rect x="440" y="600" width="48" height="48" rx="6" fill="#0D1117" stroke="#58A6FF" stroke-width="2"/><rect x="500" y="600" width="48" height="48" rx="6" fill="#0D1117" stroke="#58A6FF" stroke-width="2"/><rect x="560" y="600" width="48" height="48" rx="6" fill="#0D1117" stroke="#58A6FF" stroke-width="2"/><rect x="140" y="660" width="48" height="48" rx="6" fill="#0D1117" stroke="#58A6FF" stroke-width="2"/><rect x="200" y="660" width="48" height="48" rx="6" fill="#0D1117" stroke="#58A6FF" stroke-width="2"/><rect x="260" y="660" width="48" height="48" rx="6" fill="#0D1117" stroke="#58A6FF" stroke-width="2"/><rect x="320" y="660" width="48" height="48" rx="6" fill="#0D1117" stroke="#58A6FF" stroke-width="2"/><rect x="380" y="660" width="48" height="48" rx="6" fill="#0D1117" stroke="#58A6FF" stroke-width="2"/><rect x="440" y="660" width="48" height="48" rx="6" fill="#0D1117" stroke="#58A6FF" stroke-width="2"/><rect x="500" y="660" width="48" height="48" rx="6" fill="#0D1117" stroke="#58A6FF" stroke-width="2"/><rect x="560" y="660" width="48" height="48" rx="6" fill="#0D1117" stroke="#58A6FF" stroke-width="2"/><line x1="115" y1="708" x2="605" y2="708" stroke="#8B949E" stroke-width="2" marker-end="url(#arr)"/><text x="310" y="745" class="txt">threadIdx.x →</text><line x1="105" y1="695" x2="105" y2="240" stroke="#8B949E" stroke-width="2" marker-end="url(#arr)"/><text x="55" y="450" transform="rotate(-90 55,450)" class="txt">threadIdx.y</text>
+<rect x="930" y="140" width="600" height="660" rx="18" fill="#161B22" stroke="#58A6FF" stroke-width="3"/>
+<text x="1110" y="185" class="head">Selected Thread</text>
+
+<rect x="1010" y="240" width="430" height="150" rx="12" fill="#0D1117" stroke="#58A6FF" stroke-width="2"/>
+<text x="1050" y="290" class="txt">threadIdx.x = 5</text>
+<text x="1050" y="330" class="txt">threadIdx.y = 3</text>
+
+<rect x="1010" y="430" width="430" height="180" rx="12" fill="#0D1117" stroke="#76B900" stroke-width="2"/>
+<text x="1050" y="475" class="txt">Block Dimensions</text>
+<text x="1050" y="520" class="txt">blockDim.x = 8</text>
+<text x="1050" y="560" class="txt">blockDim.y = 8</text>
+
+<line x1="760" y1="420" x2="930" y2="315" stroke="#58A6FF" stroke-width="3" marker-end="url(#arr)"/>
+
+<rect x="980" y="650" width="480" height="90" rx="12" fill="#161B22" stroke="#58A6FF" stroke-width="2"/>
+<text x="1220" y="705" text-anchor="middle" class="txt">
+Each thread has unique (x,y) coordinates inside its block.
+</text>
+
+<line x1="70" y1="835" x2="1530" y2="835" stroke="#30363D"/>
+<text x="800" y="870" text-anchor="middle" class="small">
+Threads are identified using threadIdx.x and threadIdx.y within every CUDA block.
+</text>
+</svg>

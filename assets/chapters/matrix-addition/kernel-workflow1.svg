@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900">
+<defs>
+<style>
+.t{font:700 36px Arial;fill:#F0F6FC}
+.s{font:20px Arial;fill:#8B949E}
+.h{font:700 22px Arial;fill:#F0F6FC}
+.b{font:600 18px Arial;fill:#F0F6FC}
+.f{font:700 18px Consolas,monospace;fill:#F0F6FC}
+</style>
+<marker id="arr" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto">
+<path d="M0,0 L8,3 L0,6 Z" fill="#58A6FF"/>
+</marker>
+</defs>
+
+<rect width="1600" height="900" fill="#0D1117"/>
+
+<text x="60" y="60" class="t">CUDA Programming • Chapter 2</text>
+<text x="60" y="95" class="s">Figure 8 — CUDA Kernel Workflow</text>
+<rect x="55" y="250" width="160" height="140" rx="16" fill="#161B22" stroke="#76B900" stroke-width="3"/><text x="135.0" y="285" text-anchor="middle" class="h">Host</text><text x="135.0" y="322" text-anchor="middle" class="b">Prepare</text><text x="135.0" y="346" text-anchor="middle" class="b">Matrices</text><line x1="215" y1="320.0" x2="235" y2="320.0" stroke="#58A6FF" stroke-width="4" marker-end="url(#arr)"/><rect x="243" y="250" width="160" height="140" rx="16" fill="#161B22" stroke="#58A6FF" stroke-width="3"/><text x="323.0" y="285" text-anchor="middle" class="h">GPU Memory</text><text x="323.0" y="322" text-anchor="middle" class="b">cudaMalloc</text><text x="323.0" y="346" text-anchor="middle" class="b">cudaMemcpy</text><line x1="403" y1="320.0" x2="423" y2="320.0" stroke="#58A6FF" stroke-width="4" marker-end="url(#arr)"/><rect x="431" y="250" width="160" height="140" rx="16" fill="#161B22" stroke="#76B900" stroke-width="3"/><text x="511.0" y="285" text-anchor="middle" class="h">Kernel Launch</text><text x="511.0" y="322" text-anchor="middle" class="b">&lt;&lt;&lt;grid,</text><text x="511.0" y="346" text-anchor="middle" class="b">block&gt;&gt;&gt;</text><line x1="591" y1="320.0" x2="611" y2="320.0" stroke="#58A6FF" stroke-width="4" marker-end="url(#arr)"/><rect x="619" y="250" width="160" height="140" rx="16" fill="#161B22" stroke="#58A6FF" stroke-width="3"/><text x="699.0" y="285" text-anchor="middle" class="h">Grid</text><text x="699.0" y="322" text-anchor="middle" class="b">Blocks</text><line x1="779" y1="320.0" x2="799" y2="320.0" stroke="#58A6FF" stroke-width="4" marker-end="url(#arr)"/><rect x="807" y="250" width="160" height="140" rx="16" fill="#161B22" stroke="#58A6FF" stroke-width="3"/><text x="887.0" y="285" text-anchor="middle" class="h">Block</text><text x="887.0" y="322" text-anchor="middle" class="b">Threads</text><line x1="967" y1="320.0" x2="987" y2="320.0" stroke="#58A6FF" stroke-width="4" marker-end="url(#arr)"/><rect x="995" y="250" width="160" height="140" rx="16" fill="#161B22" stroke="#76B900" stroke-width="3"/><text x="1075.0" y="285" text-anchor="middle" class="h">Thread</text><text x="1075.0" y="322" text-anchor="middle" class="b">row,col</text><text x="1075.0" y="346" text-anchor="middle" class="b">index</text><line x1="1155" y1="320.0" x2="1175" y2="320.0" stroke="#58A6FF" stroke-width="4" marker-end="url(#arr)"/><rect x="1183" y="250" width="160" height="140" rx="16" fill="#161B22" stroke="#58A6FF" stroke-width="3"/><text x="1263.0" y="285" text-anchor="middle" class="h">Compute</text><text x="1263.0" y="322" text-anchor="middle" class="b">C=A+B</text><line x1="1343" y1="320.0" x2="1363" y2="320.0" stroke="#58A6FF" stroke-width="4" marker-end="url(#arr)"/><rect x="1371" y="250" width="160" height="140" rx="16" fill="#161B22" stroke="#76B900" stroke-width="3"/><text x="1451.0" y="285" text-anchor="middle" class="h">Output</text><text x="1451.0" y="322" text-anchor="middle" class="b">Write C</text><text x="1451.0" y="346" text-anchor="middle" class="b">cudaMemcpy</text>
+<rect x="250" y="500" width="1100" height="210" rx="18" fill="#161B22" stroke="#30363D" stroke-width="2"/>
+<text x="800" y="545" text-anchor="middle" class="h">Kernel Logic</text>
+
+<text x="800" y="590" text-anchor="middle" class="f">
+row = blockIdx.y × blockDim.y + threadIdx.y
+</text>
+
+<text x="800" y="625" text-anchor="middle" class="f">
+col = blockIdx.x × blockDim.x + threadIdx.x
+</text>
+
+<text x="800" y="660" text-anchor="middle" class="f">
+index = row × width + col
+</text>
+
+<text x="800" y="695" text-anchor="middle" class="f">
+C[index] = A[index] + B[index]
+</text>
+
+<line x1="60" y1="820" x2="1540" y2="820" stroke="#30363D"/>
+
+<text x="800" y="862" text-anchor="middle" class="s">
+Each CUDA thread computes one matrix element independently, enabling thousands of additions to execute simultaneously.
+</text>
+
+</svg>
